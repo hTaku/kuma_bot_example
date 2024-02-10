@@ -1,4 +1,3 @@
-import requests
 from scrapings import Scraping
 from line import Line
 import settings

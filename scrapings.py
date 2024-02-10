@@ -2,26 +2,15 @@
 # pip install requests
 # pip install bs4
 # pip install selenium==3.141.0
-# pip install pandas
 # pip install chromedriver-binary==chromeのバージョン
-# pip install openpyxl
 #
 # 以下からインストールされているChromeのバージョンと同じバージョンの
 # chromedriverをダウンロードし、このファイルと同じ階層に置く必要がある。
 # https://googlechromelabs.github.io/chrome-for-testing/
 
-import requests
 from bs4 import BeautifulSoup
-import re
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-import time
-import pandas as pd
-import os
-import datetime
 
 
 class Singleton(object):
